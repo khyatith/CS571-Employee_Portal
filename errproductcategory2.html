@@ -1,0 +1,16 @@
+<form action="deleteproductcategory.php" method="post">
+<table>
+<tr>
+<td><input type="text" name="Categoryname"  value="<?php echo isset($pcname) ? $pcname: ''; ?>" placeholder="Product Category Name"/></td>
+</tr>
+</table>
+
+<input type="submit" name="Sign" id="Signin" value="Search"/>
+<input type="hidden" name="SubmitCheckPC" value="sent"/>
+</form>
+
+<form action="salesManager.php" method="post" >
+<input type="submit" name="Sign" id="Signin" value="Back To Home" style="width:200px;margin-left:600px;margin-top:30px"/>
+</form>
+</body>
+</html>

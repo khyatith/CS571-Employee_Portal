@@ -1,0 +1,117 @@
+<html>
+<head>
+<style>
+body{
+background-color:#CCFFFF;
+}
+#LoginPage
+{
+float:center;
+width:900px;
+display:block;
+margin:0 auto;
+}
+#Header{
+width:400px;
+height:50px;
+float:center;
+colour:#0099CC;
+text-align:center;
+margin-left:450px;
+
+}
+#LoginCred{
+display:Block;
+}
+input
+{
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+width:200px;
+height:30px;
+}
+.default ::-webkit-input-placeholder { 
+font-size: 14pt; 
+font-family:'Times New Roman',serif;
+}
+#Signin
+{
+appearance:button;
+ -webkit-border-radius: 5px;
+ background-color:#ff9900;
+ width:250px;
+ height:35px;
+color:#ffffff;
+font-weight:bold;
+
+}
+#addemployee
+{
+appearance:button;
+width:250px;
+height:200px;
+background-color:#9DB2B1;
+-webkit-border-radius:5px;
+margin-left:125px;
+z-index:999999;
+}
+a:link
+{
+color:#FF6600;
+text-decoration:none;
+}
+table
+{
+margin-left:400px;
+
+}
+td
+{
+font-family:'Times New Roman','serif';
+font-size:16pt;
+font-weight:bold;
+color:#FF9900;
+width:500px;
+height:50px;
+}
+#table1
+{
+margin-left:0px;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td>
+<h3>1 Product has been added to the records</h3>
+</td>
+</tr>
+</table>
+<table id="table1">
+<tr>
+<td>Cake Category</td>
+<td>Cake Name</td>
+<td>Flavour</td>
+<td>Frosting</td>
+<td>Filling</td>
+<td>Cake shape</td>
+<td>Cake Size</td>
+<td>Cake Description</td>
+<td>Expiry Date</td>
+<td>Cake Price</td>
+<td>Image</td>
+</tr>
+<tr>
+<td><?php echo "$_POST['p_category']"; ?></td>
+</tr>
+</table>
+<table>
+<tr>
+<td><input type="submit" id="Signin"value="Add More Products"/></td>
+<td><input type="submit" id="Signin"value="Edit Product Information"/></td>
+</tr>
+</table>
+</body>
+</html>

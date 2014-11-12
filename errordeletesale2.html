@@ -1,0 +1,48 @@
+<form action="deletesale.php" method="post">
+<table>
+<tr>
+<td>Product Name<input value="<?php echo isset($productname) ? $productname: $productname; ?>" type="text" name="productname"/></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td>Sale Start Date<input type="text" value="<?php echo isset($salestartdate) ? $salestartdate: ''; ?>" name="salestartdate" placeholder="YYYY/MM/DD"/></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td>Sale End Date<input type="text" value="<?php echo isset($saleenddate) ? $saleenddate: ''; ?>" name="saleenddate" placeholder="YYYY/MM/DD"/></td>
+</tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+
+<td><input type="submit" name="Search" id="Signin" value="Search"/></td>
+<td><input type="hidden" name="SubmitCheck" value="sent"/></td>
+</tr>
+
+</table>
+</form>
+<form method="post" action="salesManager.php">
+<input type="submit" name="delchangeprodback" value="Back To Home" id="Signin" style="margin-left:650px"/>
+</form>
+</body>
+</html>
+
+

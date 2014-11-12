@@ -1,0 +1,27 @@
+<form action="delete_Employee.php" method="post">
+<table>
+<tr>
+<td>Search By Name</td>
+<td><input type="text" name="search_fname" placeholder="First Name"/></td>
+<td><input type="text" name="search_lname" placeholder="Last Name"/></td>
+<td><input type="text" name="search_username" placeholder="userName"/></td>
+</tr>
+</table>
+<br/><br/>
+<table>
+<tr>
+<td>Search By Designation</td>
+<td><input type="radio" name="search_designation" value="Manager" style="width:20px;height:20px"/>Manager</td>
+<td><input type="radio" name="search_designation" value="Sales Manager" style="width:20px;height:20px"/>Sales Manager</td>
+<td><input type="radio" name="search_designation" value="Administrator" style="width:20px;height:20px"/>Administrator</td>
+</tr>
+</table>
+<input type="submit" id="Signin" value="Search"/>
+<input type="hidden" name="SubmitCheck" value="sent"/>
+</form>
+
+<form method="post" action="administrator.php">
+<input type="submit" id="Signin" value="Back To Home" style="width:200px" />
+</form>
+</body>
+</html>
